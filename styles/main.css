@@ -1,9 +1,36 @@
-body {
+html, body {
     background-color: black;
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 
 #image {
     user-select: none;
+    height: 100%;
+    z-index: 1;
+}
+
+#view_point {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+#slide_left {
+    height: 100%;
+    width: 300px;
+    background-color: blue;
+    float: left;
+    z-index: 2;
+    text-align: center;
+}
+
+#slide_right {
+    height: 100%;
+    width: 300px;
+    background-color: red;
+    float: right;
+    z-index: 2;
+    text-align: center;
 }
