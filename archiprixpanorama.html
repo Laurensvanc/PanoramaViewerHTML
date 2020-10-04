@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main</title>
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
     <div id="view_point">
-        <div id="slide_left">Left</div>
-        <div id="slide_right">Right</div>    
+      <div id="slide_left" onmouseover="leftSlider();">Left</div>
+      <div id="slide_right" onmouseover="rightSlider();">Right</div>
     </div>
-    <img id="image" src="images/foto.jpg">
-</body>
+    <img id="image" src="images/foto.jpg" />
+    <!-- <script src="main.js"></script> -->
+    <script>
+      var scrolling = false;
+
+      function leftSlider() {
+        while (scrolling == true) {}
+        if (scrolling == false) {
+          scrolling = true;
+
+          window.scrollBy(-50, 0);
+          scrolldelay = setTimeout("leftSlider()", 100);
+        } else {
+        }
+      }
+
+      function rightSlider() {
+        window.scrollBy(50, 0);
+        scrolldelay = setTimeout("rightSlider()", 100);
+      }
+    </script>
+  </body>
 </html>
