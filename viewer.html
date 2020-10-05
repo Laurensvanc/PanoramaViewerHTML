@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div id="view_point">
+      <div
+        id="slide_left"
+        onmouseover="leftSlider_start();"
+        onmouseout="leftSlider_stop();"
+      >
+        <img id="left_arrow" src="images/arrow.png" />
+      </div>
+      <div
+        id="slide_right"
+        onmouseover="rightSlider_start();"
+        onmouseout="rightSlider_stop();"
+      >
+        <img id="right_arrow" src="images/arrow.png" />
+      </div>
+    </div>
+    <img id="image" src="images/foto.jpg" />
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

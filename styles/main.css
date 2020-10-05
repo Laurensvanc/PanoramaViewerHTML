@@ -20,19 +20,34 @@ body {
 }
 
 #slide_left {
+  position: fixed;
+  left: 0;
   height: 100%;
   width: 300px;
-  background-color: blue;
-  float: left;
+  background-color: rgba(0, 0, 0, 0.219);
   z-index: 2;
   text-align: center;
 }
 
 #slide_right {
+  position: fixed;
+  right: 0;
   height: 100%;
   width: 300px;
-  background-color: red;
-  float: right;
+  background-color: rgba(0, 0, 0, 0.219);
   z-index: 2;
   text-align: center;
+}
+
+#left_arrow {
+  margin-top: 50%;
+  height: 36px;
+  transform: scaleX(-1);
+  user-select: none;
+}
+
+#right_arrow {
+  margin-top: 50%;
+  height: 36px;
+  user-select: none;
 }
